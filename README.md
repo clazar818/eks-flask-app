@@ -103,7 +103,7 @@ Replace the ACCT_NUMBER placeholder in the infra\k8s\deployment.yaml file as wel
 image: ACCT_NUMBER.dkr.ecr.us-east-1.amazonaws.com/flask-app:1.0.0
 ```
 
-3) We will be configuring our credentials, which is being maintained as a secret for security best practices. In the future, another possible solution would be to utilize a secret store manager such has Vault, or AWS SSM.
+3) We will be configuring our credentials, which is being maintained as a secret for security best practices. In the future, another possible solution would be to utilize a secret store manager such as Vault, or AWS SSM.
 
 Using the provided sample secrets.yaml manifest file found in the k8s folder,  enter the RDS DB connection string into the host, and enter the password that we retrieved via terraform output -json
 
