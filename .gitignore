@@ -1,0 +1,5 @@
+# Ignoring state for demo purposes - we would use a S3 backend for state management
+*.tfstate
+*.tfstate.backup
+.terraform
+.terraform.lock.hcl

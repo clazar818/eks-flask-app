@@ -1,0 +1,5 @@
+nltk
+Pillow
+Flask
+flask_cors
+mysql-connector-python
