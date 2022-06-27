@@ -58,7 +58,7 @@ cd infra/terraform-live/eks
 terraform init
 terraform apply --auto-approve
 ```
-3) Launching RDS - Use Terraform to launch the RDS database and the associated resources. The Python application will eventually connect to this RDS database.
+4) Launching RDS - Use Terraform to launch the RDS database and the associated resources. The Python application will eventually connect to this RDS database.
 
 Update the vpc_id with the VPC ID from the VPC that we created. 
 Update subnet_group_subnet_ids with the subnets that we have defined in our infra\terraform-live\eks\main.tf  (aka the private subnets from our created VPC)
@@ -69,6 +69,11 @@ Update subnet_group_subnet_ids with the subnets that we have defined in our infr
   vpc_id                  = "vpc-0b5c36a37ab89eed0"
   subnet_group_subnet_ids = ["subnet-01dd48ccbfc86c79a", "subnet-0fbd92774a5c45480"]
 
+```
+```shell
+cd infra/terraform-live/rds
+terraform init
+terraform apply --auto-approve
 ```
 
 Retrieve the generated RDS DB password value via the following command, hold onto it for now (in your clipboard, seperate text file, etc..) we will need it for later, for when we launch our k8s db auth secret manifest.
