@@ -137,5 +137,5 @@ Apply the remaining resources:
 kubectl apply -f infra\k8s
 ```
 
-##  Part 3 - Application Deployment Setup <a name = "test"></a>
+##  Part 3 - Test Database Connection <a name = "test"></a>
 At this point your infrastructure and application have been deployed! Navigate to the NLB that we created, copy the host, and navigate to the URL. The Python application will show a connected message indicating a successful connection! :)
