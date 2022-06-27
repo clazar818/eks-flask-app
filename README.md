@@ -98,7 +98,7 @@ docker tag flask-app ACCT_NUMBER.dkr.ecr.us-east-1.amazonaws.com/flask-app:1.0.0
 docker push ACCT_NUMBER.dkr.ecr.us-east-1.amazonaws.com/flask-app:1.0.0
 ```
 
-in the infra\k8s\deployment.yaml update the account ID as well:
+Replace the ACCT_NUMBER placeholder in the infra\k8s\deployment.yaml file as well, with the AWS account ID:
 ``` 
 image: ACCT_NUMBER.dkr.ecr.us-east-1.amazonaws.com/flask-app:1.0.0
 ```
